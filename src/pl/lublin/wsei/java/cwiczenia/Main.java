@@ -8,6 +8,8 @@
 
 package pl.lublin.wsei.java.cwiczenia;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -55,5 +57,16 @@ public class Main {
         System.out.printf("alfa\tsin(alfa)\n");
             for (int i=0; i<370; i+=10)
                 System.out.printf("%d\t%f\t\n", i, Math.sin(i/360.0*2*Math.PI));
+
+        //H
+        System.out.println("\n__________________________________________________________\n");
+
+        System.out.printf("arg\tlog2(arg)\tsum(arg)\n");
+            for (int i=1; i<30; i*=2)
+
+                 System.out.printf("%d\t\t%.0f\t\t\t%.0f\t\n", i, Math.log(i)/Math.log(2), i+Math.log(i)/Math.log(2));
+
+
+
     }
 }
